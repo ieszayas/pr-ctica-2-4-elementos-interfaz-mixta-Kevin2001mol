@@ -13,6 +13,8 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     public Ventana_1() {
         initComponents();
+        verificar_correo.setVisible(false);
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -47,6 +49,7 @@ public class Ventana_1 extends javax.swing.JFrame {
         boton_iphone_clone = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
         escribir_correo_clone = new javax.swing.JTextField();
+        verificar_correo = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -236,6 +239,14 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
+        verificar_correo.setText("Correo verificado correctamente!");
+        verificar_correo.setEnabled(false);
+        verificar_correo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verificar_correoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -310,6 +321,8 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addComponent(texto_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(escribir_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(verificar_correo)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(separador)
@@ -357,7 +370,8 @@ public class Ventana_1 extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(texto_correo)
-                    .addComponent(escribir_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(escribir_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(verificar_correo))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
@@ -402,10 +416,11 @@ public class Ventana_1 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton_iphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphoneActionPerformed
@@ -498,7 +513,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_opcion1ActionPerformed
 
     private void texto_randomKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_texto_randomKeyReleased
-        // texto_random_clone.setText(texto_random.getText());
+        
     }//GEN-LAST:event_texto_randomKeyReleased
 
     private void escribir_correoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_escribir_correoKeyReleased
@@ -510,9 +525,16 @@ public class Ventana_1 extends javax.swing.JFrame {
             escribir_correo.setBorder(bordeRojo);
         }
         if ((escribir_correo.getText().matches(regex))) {
-            Border bordeNegro = BorderFactory.createLineBorder(Color.BLACK);
+            Border bordeNegro = BorderFactory.createLineBorder(Color.GREEN,2);
             escribir_correo.setBorder(bordeNegro);
+            verificar_correo.setVisible(true);
+            verificar_correo.setSelected(true);
+
+        } else {
+            verificar_correo.setVisible(false);
+            verificar_correo.setSelected(false);
         }
+
 
     }//GEN-LAST:event_escribir_correoKeyReleased
 
@@ -528,11 +550,16 @@ public class Ventana_1 extends javax.swing.JFrame {
         volumen_clone.setValue(volumen.getValue());
     }//GEN-LAST:event_volumenStateChanged
 
+    private void verificar_correoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificar_correoActionPerformed
+
+    }//GEN-LAST:event_verificar_correoActionPerformed
+
     public static void main(String args[]) {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Ventana_1().setVisible(true);
+                
             }
         });
     }
@@ -564,6 +591,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     private javax.swing.JLabel texto_correo;
     private javax.swing.JTextField texto_random;
     private javax.swing.JTextField texto_random_clone;
+    private javax.swing.JCheckBox verificar_correo;
     private javax.swing.JSlider volumen;
     private javax.swing.JSlider volumen_clone;
     // End of variables declaration//GEN-END:variables
