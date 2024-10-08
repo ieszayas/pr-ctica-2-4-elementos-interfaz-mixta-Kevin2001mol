@@ -1,9 +1,13 @@
 package controlventana;
 
+import java.awt.Color;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JTextField;
+import javax.swing.border.Border;
 
 public class Ventana_1 extends javax.swing.JFrame {
 
@@ -113,6 +117,8 @@ public class Ventana_1 extends javax.swing.JFrame {
         });
 
         boton_iphone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/b_off.png"))); // NOI18N
+        boton_iphone.setRolloverEnabled(false);
+        boton_iphone.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/b_on.png"))); // NOI18N
         boton_iphone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_iphoneActionPerformed(evt);
@@ -212,6 +218,8 @@ public class Ventana_1 extends javax.swing.JFrame {
 
         boton_iphone_clone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/b_off.png"))); // NOI18N
         boton_iphone_clone.setEnabled(false);
+        boton_iphone_clone.setRolloverEnabled(false);
+        boton_iphone_clone.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/b_on.png"))); // NOI18N
         boton_iphone_clone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_iphone_cloneActionPerformed(evt);
@@ -253,7 +261,7 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(combobox1_clone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(texto_random_clone, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(volumen_clone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -265,26 +273,27 @@ public class Ventana_1 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(opcion3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(opcion6))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(opcion2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(opcion5))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(opcion1)
                                 .addGap(28, 28, 28)
-                                .addComponent(opcion4)))
+                                .addComponent(opcion4)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(opcion2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(opcion5)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(37, 37, 37)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(33, 371, Short.MAX_VALUE))
+                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -330,18 +339,21 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addGap(21, 21, 21)
                         .addComponent(volumen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addComponent(combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(opcion2)
-                        .addComponent(opcion5))
-                    .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(opcion3)
-                    .addComponent(opcion6)
-                    .addComponent(boton_iphone))
+                    .addComponent(combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(opcion5)
+                    .addComponent(opcion2))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(boton_iphone))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(opcion3)
+                            .addComponent(opcion6))))
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(texto_correo)
@@ -373,7 +385,7 @@ public class Ventana_1 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(escribir_correo_clone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -389,40 +401,17 @@ public class Ventana_1 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton_iphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphoneActionPerformed
-// me creo los dos iconos que quiero usar,y para poner la imagen hago un getclass.getresource+la ruta de la imagen con la imagen 
-        Icon iconOff = new ImageIcon(getClass().getResource("/imagen/b_off.png"));
-        Icon iconOn = new ImageIcon(getClass().getResource("/imagen/b_on.png"));
 
-        // luego pongo default el off y si pincha se cambia a on 
-        boton_iphone.setIcon(iconOff);
-        boton_iphone.setSelectedIcon(iconOn);
-        boton_iphone_clone.setIcon(iconOff); // Para que inicialmente tenga el mismo icono
-        boton_iphone_clone.setSelectedIcon(iconOn); // Para el estado seleccionado
-       
-        //pq la primera vez no va?
-        boton_iphone.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                // Sincronizar el segundo botón con el estado del primero
-                if (boton_iphone.isSelected()) {
-                    boton_iphone_clone.setSelected(true);
-                    boton_iphone_clone.setIcon(boton_iphone.getSelectedIcon());
-                } else {
-                    boton_iphone_clone.setSelected(false);
-                    boton_iphone_clone.setIcon(boton_iphone.getIcon());
-                }
-            }
-        });
+        boton_iphone_clone.setSelected(boton_iphone.isSelected());
 
-        
     }//GEN-LAST:event_boton_iphoneActionPerformed
 
     private void opcion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion6ActionPerformed
@@ -470,7 +459,12 @@ public class Ventana_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_opcion6_cloneActionPerformed
 
     private void texto_randomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_randomActionPerformed
-        texto_random_clone.setText(texto_random.getText());
+        for (int i = texto_random.getText().length() - 1; i >= 0; i--) {
+
+            texto_random_clone.setText(texto_random_clone.getText() + texto_random.getText().charAt(i));
+
+        }
+
 
     }//GEN-LAST:event_texto_randomActionPerformed
 
@@ -509,6 +503,13 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void escribir_correoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_escribir_correoKeyReleased
         escribir_correo_clone.setText(escribir_correo.getText());
+        JTextField text = new JTextField();
+        String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+        while (!(escribir_correo.getText().matches(regex))) {
+            Border bordeRojo = BorderFactory.createLineBorder(Color.RED, 2);
+            escribir_correo.setBorder(bordeRojo);
+        }
+        Border bordeRojo = BorderFactory.createLineBorder(Color.BLACK, 2);
     }//GEN-LAST:event_escribir_correoKeyReleased
 
     private void spinner1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spinner1KeyReleased
