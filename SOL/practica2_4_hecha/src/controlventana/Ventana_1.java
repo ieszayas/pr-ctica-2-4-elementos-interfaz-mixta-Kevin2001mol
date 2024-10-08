@@ -1,10 +1,7 @@
-
 package controlventana;
-
 
 public class Ventana_1 extends javax.swing.JFrame {
 
- 
     public Ventana_1() {
         initComponents();
     }
@@ -27,7 +24,7 @@ public class Ventana_1 extends javax.swing.JFrame {
         combobox1 = new javax.swing.JComboBox<>();
         spinner1 = new javax.swing.JSpinner();
         volumen = new javax.swing.JSlider();
-        jSeparator1 = new javax.swing.JSeparator();
+        separador = new javax.swing.JSeparator();
         opcion1_clone = new javax.swing.JRadioButton();
         opcion2_clone = new javax.swing.JRadioButton();
         opcion3_clone = new javax.swing.JRadioButton();
@@ -40,7 +37,7 @@ public class Ventana_1 extends javax.swing.JFrame {
         volumen_clone = new javax.swing.JSlider();
         boton_iphone_clone = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        escribir_correo_clone = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -105,8 +102,8 @@ public class Ventana_1 extends javax.swing.JFrame {
         jLabel1.setText("Correo");
         jLabel1.setEnabled(false);
 
-        jTextField2.setText("jTextField2");
-        jTextField2.setEnabled(false);
+        escribir_correo_clone.setText("jTextField2");
+        escribir_correo_clone.setEnabled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -181,12 +178,12 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addComponent(escribir_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jSeparator1)
+                        .addComponent(separador)
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(33, 33, 33)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(escribir_correo_clone, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -222,7 +219,7 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(47, 47, 47)
-                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(separador, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(opcion1_clone)
@@ -244,7 +241,7 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(escribir_correo_clone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(108, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -273,9 +270,99 @@ public class Ventana_1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton_iphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphoneActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_boton_iphoneActionPerformed
 
+    }//GEN-LAST:event_boton_iphoneActionPerformed
+    private void boton_iphone_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void combobox1ActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void combobox1_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void escribir_correoActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void escribir_correo_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {
+        opcion1_clone.setSelected(opcion1.isSelected());
+    }
+
+    private void opcion1_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion2_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion3ActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion3_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion4ActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion4_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion5ActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion5_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion6ActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void opcion6_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void spinnerActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void spinner_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void texto_randomActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void texto_random_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void volumenActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void volumen_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
 
     public static void main(String args[]) {
 
@@ -292,10 +379,9 @@ public class Ventana_1 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> combobox1;
     private javax.swing.JComboBox<String> combobox1_clone;
     private javax.swing.JTextField escribir_correo;
+    private javax.swing.JTextField escribir_correo_clone;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JRadioButton opcion1;
     private javax.swing.JRadioButton opcion1_clone;
     private javax.swing.JRadioButton opcion2;
@@ -308,6 +394,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     private javax.swing.JCheckBox opcion5_clone;
     private javax.swing.JCheckBox opcion6;
     private javax.swing.JCheckBox opcion6_clone;
+    private javax.swing.JSeparator separador;
     private javax.swing.JSpinner spinner1;
     private javax.swing.JSpinner spinner1_clone;
     private javax.swing.JLabel texto_correo;
