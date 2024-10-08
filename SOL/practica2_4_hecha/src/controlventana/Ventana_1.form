@@ -80,7 +80,7 @@
                           <Component id="spinner1_clone" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="boton_iphone_clone" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -198,47 +198,39 @@
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                  <Component id="separador" min="-2" pref="10" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="opcion1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="opcion4_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="texto_random_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="opcion2_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="opcion5_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="combobox1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                                  <Component id="volumen_clone" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                          <Component id="separador" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="opcion1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="opcion4_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="texto_random_clone" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="opcion3_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="opcion6_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="spinner1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="opcion2_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="opcion5_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="combobox1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="escribir_correo_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="87" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="boton_iphone_clone" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                          <Component id="volumen_clone" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="opcion3_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="opcion6_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spinner1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="boton_iphone_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="escribir_correo_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="65" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -311,7 +303,9 @@
         </Component>
         <Component class="javax.swing.JToggleButton" name="boton_iphone">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jToggleButton1"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagen/b_off.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton_iphoneActionPerformed"/>
@@ -342,6 +336,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="volumen">
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="volumenStateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="separador">
         </Component>
