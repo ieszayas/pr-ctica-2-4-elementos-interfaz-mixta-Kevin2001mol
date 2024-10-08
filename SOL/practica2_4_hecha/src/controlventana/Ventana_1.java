@@ -505,11 +505,15 @@ public class Ventana_1 extends javax.swing.JFrame {
         escribir_correo_clone.setText(escribir_correo.getText());
         JTextField text = new JTextField();
         String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
-        while (!(escribir_correo.getText().matches(regex))) {
+        if (!(escribir_correo.getText().matches(regex))) {
             Border bordeRojo = BorderFactory.createLineBorder(Color.RED, 2);
             escribir_correo.setBorder(bordeRojo);
         }
-        Border bordeRojo = BorderFactory.createLineBorder(Color.BLACK, 2);
+        if ((escribir_correo.getText().matches(regex))) {
+            Border bordeNegro = BorderFactory.createLineBorder(Color.BLACK);
+            escribir_correo.setBorder(bordeNegro);
+        }
+
     }//GEN-LAST:event_escribir_correoKeyReleased
 
     private void spinner1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spinner1KeyReleased
