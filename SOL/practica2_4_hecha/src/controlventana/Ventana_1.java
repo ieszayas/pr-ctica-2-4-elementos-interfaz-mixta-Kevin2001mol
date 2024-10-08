@@ -14,7 +14,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     public Ventana_1() {
         initComponents();
         verificar_correo.setVisible(false);
-        
+        chiquitin.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -50,6 +50,7 @@ public class Ventana_1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         escribir_correo_clone = new javax.swing.JTextField();
         verificar_correo = new javax.swing.JCheckBox();
+        chiquitin = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -239,13 +240,17 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
+        verificar_correo.setForeground(javax.swing.UIManager.getDefaults().getColor("Actions.Green"));
         verificar_correo.setText("Correo verificado correctamente!");
+        verificar_correo.setToolTipText("");
         verificar_correo.setEnabled(false);
         verificar_correo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 verificar_correoActionPerformed(evt);
             }
         });
+
+        chiquitin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/ok.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -323,6 +328,8 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addComponent(escribir_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(verificar_correo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(chiquitin)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(separador)
@@ -356,22 +363,27 @@ public class Ventana_1 extends javax.swing.JFrame {
                     .addComponent(combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(opcion5)
                     .addComponent(opcion2))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(boton_iphone))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(boton_iphone))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(opcion3)
+                                    .addComponent(opcion6))))
+                        .addGap(21, 21, 21)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(opcion3)
-                            .addComponent(opcion6))))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(texto_correo)
-                    .addComponent(escribir_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(verificar_correo))
+                            .addComponent(texto_correo)
+                            .addComponent(escribir_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(verificar_correo)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(chiquitin)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
@@ -416,7 +428,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -529,10 +541,11 @@ public class Ventana_1 extends javax.swing.JFrame {
             escribir_correo.setBorder(bordeNegro);
             verificar_correo.setVisible(true);
             verificar_correo.setSelected(true);
-
+            chiquitin.setVisible(true);
         } else {
             verificar_correo.setVisible(false);
             verificar_correo.setSelected(false);
+            chiquitin.setVisible(false);
         }
 
 
@@ -567,6 +580,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton boton_iphone;
     private javax.swing.JToggleButton boton_iphone_clone;
+    private javax.swing.JLabel chiquitin;
     private javax.swing.JComboBox<String> combobox1;
     private javax.swing.JComboBox<String> combobox1_clone;
     private javax.swing.JTextField escribir_correo;
