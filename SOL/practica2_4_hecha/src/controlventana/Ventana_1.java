@@ -1,5 +1,7 @@
 package controlventana;
 
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
@@ -396,35 +398,51 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void boton_iphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphoneActionPerformed
 // me creo los dos iconos que quiero usar,y para poner la imagen hago un getclass.getresource+la ruta de la imagen con la imagen 
-    Icon iconOff = new ImageIcon(getClass().getResource("/imagen/b_off.png"));
-    Icon iconOn = new ImageIcon(getClass().getResource("/imagen/b_on.png"));
+        Icon iconOff = new ImageIcon(getClass().getResource("/imagen/b_off.png"));
+        Icon iconOn = new ImageIcon(getClass().getResource("/imagen/b_on.png"));
 
-    // luego pongo default el off y si pincha se cambia a on 
-    boton_iphone.setIcon(iconOff);         
-    boton_iphone.setSelectedIcon(iconOn);  
-    boton_iphone_clone.setIcon( boton_iphone.getSelectedIcon());
-    
-    //tiene que haber otra forma
+        // luego pongo default el off y si pincha se cambia a on 
+        boton_iphone.setIcon(iconOff);
+        boton_iphone.setSelectedIcon(iconOn);
+        boton_iphone_clone.setIcon(iconOff); // Para que inicialmente tenga el mismo icono
+        boton_iphone_clone.setSelectedIcon(iconOn); // Para el estado seleccionado
+       
+        //pq la primera vez no va?
+        boton_iphone.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                // Sincronizar el segundo botón con el estado del primero
+                if (boton_iphone.isSelected()) {
+                    boton_iphone_clone.setSelected(true);
+                    boton_iphone_clone.setIcon(boton_iphone.getSelectedIcon());
+                } else {
+                    boton_iphone_clone.setSelected(false);
+                    boton_iphone_clone.setIcon(boton_iphone.getIcon());
+                }
+            }
+        });
+
+        
     }//GEN-LAST:event_boton_iphoneActionPerformed
 
     private void opcion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion6ActionPerformed
-        opcion6_clone.setSelected( opcion6.isSelected());
+        opcion6_clone.setSelected(opcion6.isSelected());
     }//GEN-LAST:event_opcion6ActionPerformed
 
     private void opcion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion5ActionPerformed
-        opcion5_clone.setSelected( opcion5.isSelected());
+        opcion5_clone.setSelected(opcion5.isSelected());
     }//GEN-LAST:event_opcion5ActionPerformed
 
     private void opcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion4ActionPerformed
-       opcion4_clone.setSelected( opcion4.isSelected());
+        opcion4_clone.setSelected(opcion4.isSelected());
     }//GEN-LAST:event_opcion4ActionPerformed
 
     private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2ActionPerformed
-        opcion2_clone.setSelected( opcion2.isSelected());
+        opcion2_clone.setSelected(opcion2.isSelected());
     }//GEN-LAST:event_opcion2ActionPerformed
 
     private void opcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3ActionPerformed
-        opcion3_clone.setSelected( opcion3.isSelected());
+        opcion3_clone.setSelected(opcion3.isSelected());
     }//GEN-LAST:event_opcion3ActionPerformed
 
     private void opcion1_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1_cloneActionPerformed
@@ -453,11 +471,10 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void texto_randomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_randomActionPerformed
         texto_random_clone.setText(texto_random.getText());
-        
+
     }//GEN-LAST:event_texto_randomActionPerformed
 
-    
-    
+
     private void texto_random_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_random_cloneActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_texto_random_cloneActionPerformed
@@ -483,11 +500,11 @@ public class Ventana_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_escribir_correo_cloneActionPerformed
 
     private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1ActionPerformed
-       opcion1_clone.setSelected( opcion1.isSelected());
+        opcion1_clone.setSelected(opcion1.isSelected());
     }//GEN-LAST:event_opcion1ActionPerformed
 
     private void texto_randomKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_texto_randomKeyReleased
-    // texto_random_clone.setText(texto_random.getText());
+        // texto_random_clone.setText(texto_random.getText());
     }//GEN-LAST:event_texto_randomKeyReleased
 
     private void escribir_correoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_escribir_correoKeyReleased
@@ -495,7 +512,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_escribir_correoKeyReleased
 
     private void spinner1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spinner1KeyReleased
-       
+
     }//GEN-LAST:event_spinner1KeyReleased
 
     private void spinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinner1StateChanged
@@ -505,7 +522,6 @@ public class Ventana_1 extends javax.swing.JFrame {
     private void volumenStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_volumenStateChanged
         volumen_clone.setValue(volumen.getValue());
     }//GEN-LAST:event_volumenStateChanged
-    
 
     public static void main(String args[]) {
 
