@@ -42,22 +42,70 @@ public class Ventana_1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         opcion1.setText("Opcion 1");
+        opcion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion1ActionPerformed(evt);
+            }
+        });
 
         opcion2.setText("Opcion 2");
+        opcion2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion2ActionPerformed(evt);
+            }
+        });
 
         opcion3.setText("Opcion 3");
+        opcion3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion3ActionPerformed(evt);
+            }
+        });
 
         opcion4.setText("Opcion 4");
+        opcion4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion4ActionPerformed(evt);
+            }
+        });
 
         opcion5.setText("Opcion 5");
+        opcion5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion5ActionPerformed(evt);
+            }
+        });
 
         opcion6.setText("Opcion 6");
+        opcion6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion6ActionPerformed(evt);
+            }
+        });
 
         texto_correo.setText("Correo");
 
-        texto_random.setText("jTextField1");
+        texto_random.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texto_randomActionPerformed(evt);
+            }
+        });
+        texto_random.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                texto_randomKeyReleased(evt);
+            }
+        });
 
-        escribir_correo.setText("jTextField2");
+        escribir_correo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                escribir_correoActionPerformed(evt);
+            }
+        });
+        escribir_correo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                escribir_correoKeyReleased(evt);
+            }
+        });
 
         boton_iphone.setText("jToggleButton1");
         boton_iphone.addActionListener(new java.awt.event.ActionListener() {
@@ -67,30 +115,85 @@ public class Ventana_1 extends javax.swing.JFrame {
         });
 
         combobox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        combobox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                combobox1ActionPerformed(evt);
+            }
+        });
+
+        spinner1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spinner1StateChanged(evt);
+            }
+        });
+        spinner1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                spinner1KeyReleased(evt);
+            }
+        });
 
         opcion1_clone.setText("Opcion 1");
         opcion1_clone.setEnabled(false);
+        opcion1_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion1_cloneActionPerformed(evt);
+            }
+        });
 
         opcion2_clone.setText("Opcion 2");
         opcion2_clone.setEnabled(false);
+        opcion2_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion2_cloneActionPerformed(evt);
+            }
+        });
 
         opcion3_clone.setText("Opcion 3");
         opcion3_clone.setEnabled(false);
+        opcion3_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion3_cloneActionPerformed(evt);
+            }
+        });
 
         opcion4_clone.setText("Opcion 4");
         opcion4_clone.setEnabled(false);
+        opcion4_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion4_cloneActionPerformed(evt);
+            }
+        });
 
         opcion5_clone.setText("Opcion 5");
         opcion5_clone.setEnabled(false);
+        opcion5_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion5_cloneActionPerformed(evt);
+            }
+        });
 
         opcion6_clone.setText("Opcion 6");
         opcion6_clone.setEnabled(false);
+        opcion6_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opcion6_cloneActionPerformed(evt);
+            }
+        });
 
-        texto_random_clone.setText("jTextField1");
         texto_random_clone.setEnabled(false);
+        texto_random_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texto_random_cloneActionPerformed(evt);
+            }
+        });
 
         combobox1_clone.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         combobox1_clone.setEnabled(false);
+        combobox1_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                combobox1_cloneActionPerformed(evt);
+            }
+        });
 
         spinner1_clone.setEnabled(false);
 
@@ -98,12 +201,21 @@ public class Ventana_1 extends javax.swing.JFrame {
 
         boton_iphone_clone.setText("jToggleButton1");
         boton_iphone_clone.setEnabled(false);
+        boton_iphone_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton_iphone_cloneActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Correo");
         jLabel1.setEnabled(false);
 
-        escribir_correo_clone.setText("jTextField2");
         escribir_correo_clone.setEnabled(false);
+        escribir_correo_clone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                escribir_correo_cloneActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -155,22 +267,24 @@ public class Ventana_1 extends javax.swing.JFrame {
                                 .addComponent(opcion1)
                                 .addGap(28, 28, 28)
                                 .addComponent(opcion4)))
-                        .addGap(66, 66, 66)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(boton_iphone)
-                                .addGap(70, 70, 70))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGap(37, 37, 37)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(texto_random))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
+                                        .addComponent(volumen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(33, 33, 33))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(boton_iphone)
+                                        .addGap(70, 70, 70))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(volumen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(33, 33, 33))))
+                                .addComponent(texto_random, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(8, 8, 8)
                         .addComponent(texto_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -192,23 +306,29 @@ public class Ventana_1 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(opcion1)
-                            .addComponent(opcion4)
-                            .addComponent(texto_random, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(opcion2)
-                            .addComponent(opcion5)
-                            .addComponent(combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(opcion1)
+                                    .addComponent(opcion4))
+                                .addGap(8, 8, 8))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(texto_random, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)))
+                        .addComponent(combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(opcion2)
+                                .addComponent(opcion5))
+                            .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addComponent(volumen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(opcion3)
                     .addComponent(opcion6)
-                    .addComponent(spinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_iphone))
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -242,7 +362,7 @@ public class Ventana_1 extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
                             .addComponent(escribir_correo_clone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(108, Short.MAX_VALUE))
+                        .addContainerGap(87, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(boton_iphone_clone)
@@ -272,97 +392,102 @@ public class Ventana_1 extends javax.swing.JFrame {
     private void boton_iphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphoneActionPerformed
 
     }//GEN-LAST:event_boton_iphoneActionPerformed
-    private void boton_iphone_cloneActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }
+    private void opcion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion6ActionPerformed
+        opcion6_clone.setSelected( opcion6.isSelected());
+    }//GEN-LAST:event_opcion6ActionPerformed
 
-    private void combobox1ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void opcion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion5ActionPerformed
+        opcion5_clone.setSelected( opcion5.isSelected());
+    }//GEN-LAST:event_opcion5ActionPerformed
 
-    }
+    private void opcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion4ActionPerformed
+       opcion4_clone.setSelected( opcion4.isSelected());
+    }//GEN-LAST:event_opcion4ActionPerformed
 
-    private void combobox1_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+    private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2ActionPerformed
+        opcion2_clone.setSelected( opcion2.isSelected());
+    }//GEN-LAST:event_opcion2ActionPerformed
 
-    }
+    private void opcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3ActionPerformed
+        opcion3_clone.setSelected( opcion3.isSelected());
+    }//GEN-LAST:event_opcion3ActionPerformed
 
-    private void escribir_correoActionPerformed(java.awt.event.ActionEvent evt) {
+    private void opcion1_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opcion1_cloneActionPerformed
 
-    }
+    private void opcion2_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opcion2_cloneActionPerformed
 
-    private void escribir_correo_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+    private void opcion3_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opcion3_cloneActionPerformed
 
-    }
+    private void opcion4_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion4_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opcion4_cloneActionPerformed
 
-    private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {
-        opcion1_clone.setSelected(opcion1.isSelected());
-    }
+    private void opcion5_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion5_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opcion5_cloneActionPerformed
 
-    private void opcion1_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+    private void opcion6_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion6_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opcion6_cloneActionPerformed
 
-    }
+    private void texto_randomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_randomActionPerformed
+        texto_random_clone.setText(texto_random.getText());
+        
+    }//GEN-LAST:event_texto_randomActionPerformed
 
-    private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {
+    
+    
+    private void texto_random_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_random_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_texto_random_cloneActionPerformed
 
-    }
+    private void combobox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combobox1ActionPerformed
+        combobox1_clone.setSelectedItem(combobox1.getSelectedItem());
+    }//GEN-LAST:event_combobox1ActionPerformed
 
-    private void opcion2_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+    private void combobox1_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combobox1_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_combobox1_cloneActionPerformed
 
-    }
+    private void boton_iphone_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphone_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton_iphone_cloneActionPerformed
 
-    private void opcion3ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void escribir_correoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escribir_correoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_escribir_correoActionPerformed
 
-    }
+    private void escribir_correo_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escribir_correo_cloneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_escribir_correo_cloneActionPerformed
 
-    private void opcion3_cloneActionPerformed(java.awt.event.ActionEvent evt) {
+    private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1ActionPerformed
+       opcion1_clone.setSelected( opcion1.isSelected());
+    }//GEN-LAST:event_opcion1ActionPerformed
 
-    }
+    private void texto_randomKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_texto_randomKeyReleased
+    // texto_random_clone.setText(texto_random.getText());
+    }//GEN-LAST:event_texto_randomKeyReleased
 
-    private void opcion4ActionPerformed(java.awt.event.ActionEvent evt) {
+    private void escribir_correoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_escribir_correoKeyReleased
+        escribir_correo_clone.setText(escribir_correo.getText());
+    }//GEN-LAST:event_escribir_correoKeyReleased
 
-    }
+    private void spinner1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spinner1KeyReleased
+       
+    }//GEN-LAST:event_spinner1KeyReleased
 
-    private void opcion4_cloneActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void opcion5ActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void opcion5_cloneActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void opcion6ActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void opcion6_cloneActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void spinnerActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void spinner_cloneActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void texto_randomActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void texto_random_cloneActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void volumenActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
-    private void volumen_cloneActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
+    private void spinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinner1StateChanged
+        spinner1_clone.setValue(spinner1.getValue());
+    }//GEN-LAST:event_spinner1StateChanged
+    
 
     public static void main(String args[]) {
 

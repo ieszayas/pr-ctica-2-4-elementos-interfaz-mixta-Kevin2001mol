@@ -105,25 +105,28 @@
                                   <Component id="opcion4" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="spinner1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="boton_iphone" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Component id="combobox1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <EmptySpace pref="138" max="32767" attributes="0"/>
+                                          <Component id="volumen" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="texto_random" max="32767" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="spinner1" min="-2" pref="73" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="boton_iphone" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="volumen" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="texto_random" min="-2" pref="184" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -154,16 +157,27 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="opcion1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="opcion4" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="texto_random" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="opcion1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="opcion4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="texto_random" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="opcion2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="opcion5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="combobox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="combobox1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="opcion2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="opcion5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="spinner1" alignment="1" min="-2" pref="21" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -171,11 +185,10 @@
                           <Component id="volumen" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="opcion3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="opcion6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="spinner1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="boton_iphone" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
@@ -218,7 +231,7 @@
                               <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="escribir_correo_clone" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="108" max="32767" attributes="0"/>
+                          <EmptySpace pref="87" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
@@ -235,31 +248,49 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 3"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="opcion4">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 4"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="opcion5">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 5"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="opcion6">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 6"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="texto_correo">
           <Properties>
@@ -267,14 +298,16 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="texto_random">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
-          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texto_randomActionPerformed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="texto_randomKeyReleased"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="escribir_correo">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField2"/>
-          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="escribir_correoActionPerformed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="escribir_correoKeyReleased"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JToggleButton" name="boton_iphone">
           <Properties>
@@ -295,11 +328,18 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="combobox1ActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JSpinner" name="spinner1">
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinner1StateChanged"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="spinner1KeyReleased"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="volumen">
         </Component>
@@ -310,42 +350,62 @@
             <Property name="text" type="java.lang.String" value="Opcion 1"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion1_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion2_clone">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 2"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion2_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion3_clone">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 3"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion3_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="opcion4_clone">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 4"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion4_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="opcion5_clone">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 5"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion5_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="opcion6_clone">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 6"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion6_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="texto_random_clone">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texto_random_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="combobox1_clone">
           <Properties>
@@ -359,6 +419,9 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="combobox1_cloneActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -378,6 +441,9 @@
             <Property name="text" type="java.lang.String" value="jToggleButton1"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton_iphone_cloneActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
@@ -387,9 +453,11 @@
         </Component>
         <Component class="javax.swing.JTextField" name="escribir_correo_clone">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField2"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="escribir_correo_cloneActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
