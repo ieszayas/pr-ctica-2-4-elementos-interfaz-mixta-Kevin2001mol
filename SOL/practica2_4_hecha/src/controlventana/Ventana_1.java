@@ -6,6 +6,7 @@ import java.awt.event.ItemListener;
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
@@ -21,6 +22,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        grup_botones123 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         opcion1 = new javax.swing.JRadioButton();
         opcion2 = new javax.swing.JRadioButton();
@@ -449,14 +451,17 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void opcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion4ActionPerformed
         opcion4_clone.setSelected(opcion4.isSelected());
+
     }//GEN-LAST:event_opcion4ActionPerformed
 
     private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2ActionPerformed
         opcion2_clone.setSelected(opcion2.isSelected());
+        apagarOtrosBotones(opcion2);
     }//GEN-LAST:event_opcion2ActionPerformed
 
     private void opcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3ActionPerformed
         opcion3_clone.setSelected(opcion3.isSelected());
+        apagarOtrosBotones(opcion3);
     }//GEN-LAST:event_opcion3ActionPerformed
 
     private void opcion1_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1_cloneActionPerformed
@@ -489,6 +494,8 @@ public class Ventana_1 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_texto_randomActionPerformed
 
+    
+    
 
     private void texto_random_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_random_cloneActionPerformed
 
@@ -516,6 +523,7 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1ActionPerformed
         opcion1_clone.setSelected(opcion1.isSelected());
+        apagarOtrosBotones(opcion1);
     }//GEN-LAST:event_opcion1ActionPerformed
 
     private void texto_randomKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_texto_randomKeyReleased
@@ -545,6 +553,43 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_escribir_correoKeyReleased
 
+    private void apagarOtrosBotones(JRadioButton boton) {
+        int esboton = 0;
+        if (boton.equals(opcion1)) {
+            esboton = 1;
+        }
+        if (boton.equals(opcion2)) {
+            esboton = 2;
+        }
+        if (boton.equals(opcion3)) {
+            esboton = 3;
+        }
+
+        // apagar los otros botones
+        switch (esboton) {
+            case 1:
+                opcion2.setSelected(false);
+                opcion2_clone.setSelected(opcion2.isSelected());
+                opcion3.setSelected(false);
+                opcion3_clone.setSelected(opcion3.isSelected());
+                break;
+            case 2:
+                opcion1.setSelected(false);
+                opcion1_clone.setSelected(opcion1.isSelected());
+                opcion3.setSelected(false);
+                opcion3_clone.setSelected(opcion3.isSelected());
+                break;
+            case 3:
+                opcion1.setSelected(false);
+                opcion1_clone.setSelected(opcion1.isSelected());
+                opcion2.setSelected(false);
+                opcion2_clone.setSelected(opcion2.isSelected());
+                break;
+            default:
+                // Si ningún botón coincide, no hace nada
+                break;
+        }
+    }
     private void spinner1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spinner1KeyReleased
 
     }//GEN-LAST:event_spinner1KeyReleased
@@ -579,6 +624,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> combobox1_clone;
     private javax.swing.JTextField escribir_correo;
     private javax.swing.JTextField escribir_correo_clone;
+    private javax.swing.ButtonGroup grup_botones123;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton opcion1;
