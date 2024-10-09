@@ -55,20 +55,20 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="opcion1_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="opcion1_clonerb" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="opcion4_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="opcion4_cloneck" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="opcion2_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="opcion2_clonerb" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="opcion5_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="opcion5_cloneck" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="opcion3_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="opcion3_clonerb" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="opcion6_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="opcion6_cloneck" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -76,16 +76,16 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="combobox1_clone" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="texto_random_clone" alignment="0" min="-2" pref="148" max="-2" attributes="0"/>
+                              <Component id="texto_random_clone_field" alignment="0" min="-2" pref="148" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="volumen_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="volumen_clone_sldr" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="spinner1_clone" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="boton_iphone_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="boton_iphone_clone_tb" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -96,20 +96,20 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="opcion3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="opcion3rb" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="opcion6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="opcion6ck" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="opcion1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="opcion1rb" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="opcion4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="opcion4ck" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="opcion2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="opcion2rb" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="opcion5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="opcion5ck" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -123,16 +123,16 @@
                                       <Group type="102" attributes="0">
                                           <Component id="spinner1" min="-2" pref="73" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="boton_iphone" min="-2" max="-2" attributes="0"/>
+                                          <Component id="boton_iphone_tb" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="texto_random" min="-2" pref="184" max="-2" attributes="0"/>
+                                  <Component id="texto_random_field" min="-2" pref="184" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="volumen" min="-2" max="-2" attributes="0"/>
+                                  <Component id="volumen_sldr" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -141,11 +141,11 @@
                           <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                           <Component id="texto_correo" min="-2" pref="42" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="escribir_correo" min="-2" pref="246" max="-2" attributes="0"/>
+                          <Component id="escribir_correo_field" min="-2" pref="246" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="verificar_correo" min="-2" max="-2" attributes="0"/>
+                          <Component id="verificar_correock" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="chiquitin" min="-2" max="-2" attributes="0"/>
+                          <Component id="chiquitin_lbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
@@ -153,9 +153,9 @@
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="texto_correo_2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="escribir_correo_clone" min="-2" pref="228" max="-2" attributes="0"/>
+                          <Component id="escribir_correo_clone_field" min="-2" pref="228" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -171,27 +171,27 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="opcion1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="opcion4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="opcion1rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="opcion4ck" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="texto_random" min="-2" max="-2" attributes="0"/>
+                                  <Component id="texto_random_field" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="volumen" min="-2" max="-2" attributes="0"/>
+                          <Component id="volumen_sldr" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="combobox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="opcion5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="opcion2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="opcion5ck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="opcion2rb" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" attributes="0">
@@ -200,26 +200,26 @@
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="spinner1" min="-2" pref="21" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="boton_iphone" min="-2" max="-2" attributes="0"/>
+                                  <Component id="boton_iphone_tb" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="opcion3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="opcion6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="opcion3rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="opcion6ck" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="texto_correo" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="escribir_correo" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="verificar_correo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="escribir_correo_field" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="verificar_correock" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="chiquitin" min="-2" max="-2" attributes="0"/>
+                          <Component id="chiquitin_lbl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -228,33 +228,33 @@
                           <Component id="separador" min="-2" pref="10" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="opcion1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="opcion4_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="texto_random_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="opcion1_clonerb" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="opcion4_cloneck" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="texto_random_clone_field" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="opcion2_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="opcion5_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="opcion2_clonerb" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="opcion5_cloneck" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="combobox1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                          <Component id="volumen_clone" min="-2" max="-2" attributes="0"/>
+                          <Component id="volumen_clone_sldr" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="opcion3_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="opcion6_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="opcion3_clonerb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="opcion6_cloneck" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="spinner1_clone" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="boton_iphone_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="boton_iphone_clone_tb" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="escribir_correo_clone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="texto_correo_2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="escribir_correo_clone_field" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="21" max="32767" attributes="0"/>
               </Group>
@@ -262,7 +262,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JRadioButton" name="opcion1">
+        <Component class="javax.swing.JRadioButton" name="opcion1rb">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="grup_botones123"/>
@@ -270,10 +270,10 @@
             <Property name="text" type="java.lang.String" value="Opcion 1"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion1rbActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="opcion2">
+        <Component class="javax.swing.JRadioButton" name="opcion2rb">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="grup_botones123"/>
@@ -281,10 +281,10 @@
             <Property name="text" type="java.lang.String" value="Opcion 2"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion2rbActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="opcion3">
+        <Component class="javax.swing.JRadioButton" name="opcion3rb">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="grup_botones123"/>
@@ -292,31 +292,31 @@
             <Property name="text" type="java.lang.String" value="Opcion 3"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion3rbActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="opcion4">
+        <Component class="javax.swing.JCheckBox" name="opcion4ck">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 4"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion4ckActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="opcion5">
+        <Component class="javax.swing.JCheckBox" name="opcion5ck">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 5"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion5ckActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="opcion6">
+        <Component class="javax.swing.JCheckBox" name="opcion6ck">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 6"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion6ckActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="texto_correo">
@@ -324,19 +324,19 @@
             <Property name="text" type="java.lang.String" value="Correo"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="texto_random">
+        <Component class="javax.swing.JTextField" name="texto_random_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texto_randomActionPerformed"/>
-            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="texto_randomKeyReleased"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texto_random_fieldActionPerformed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="texto_random_fieldKeyReleased"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="escribir_correo">
+        <Component class="javax.swing.JTextField" name="escribir_correo_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="escribir_correoActionPerformed"/>
-            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="escribir_correoKeyReleased"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="escribir_correo_fieldActionPerformed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="escribir_correo_fieldKeyReleased"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="boton_iphone">
+        <Component class="javax.swing.JToggleButton" name="boton_iphone_tb">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagen/b_off.png"/>
@@ -347,7 +347,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton_iphoneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton_iphone_tbActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="combobox1">
@@ -374,14 +374,14 @@
             <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="spinner1KeyReleased"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="volumen">
+        <Component class="javax.swing.JSlider" name="volumen_sldr">
           <Events>
-            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="volumenStateChanged"/>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="volumen_sldrStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="separador">
         </Component>
-        <Component class="javax.swing.JRadioButton" name="opcion1_clone">
+        <Component class="javax.swing.JRadioButton" name="opcion1_clonerb">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="grup_botones123_clone"/>
@@ -390,10 +390,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion1_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion1_clonerbActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="opcion2_clone">
+        <Component class="javax.swing.JRadioButton" name="opcion2_clonerb">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="grup_botones123_clone"/>
@@ -402,10 +402,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion2_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion2_clonerbActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="opcion3_clone">
+        <Component class="javax.swing.JRadioButton" name="opcion3_clonerb">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="grup_botones123_clone"/>
@@ -414,42 +414,42 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion3_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion3_clonerbActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="opcion4_clone">
+        <Component class="javax.swing.JCheckBox" name="opcion4_cloneck">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 4"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion4_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion4_cloneckActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="opcion5_clone">
+        <Component class="javax.swing.JCheckBox" name="opcion5_cloneck">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 5"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion5_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion5_cloneckActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="opcion6_clone">
+        <Component class="javax.swing.JCheckBox" name="opcion6_cloneck">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opcion 6"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion6_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcion6_cloneckActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="texto_random_clone">
+        <Component class="javax.swing.JTextField" name="texto_random_clone_field">
           <Properties>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texto_random_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texto_random_clone_fieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="combobox1_clone">
@@ -476,12 +476,12 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="volumen_clone">
+        <Component class="javax.swing.JSlider" name="volumen_clone_sldr">
           <Properties>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="boton_iphone_clone">
+        <Component class="javax.swing.JToggleButton" name="boton_iphone_clone_tb">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagen/b_off.png"/>
@@ -493,24 +493,24 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton_iphone_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton_iphone_clone_tbActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="texto_correo_2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Correo"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="escribir_correo_clone">
+        <Component class="javax.swing.JTextField" name="escribir_correo_clone_field">
           <Properties>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="escribir_correo_cloneActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="escribir_correo_clone_fieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="verificar_correo">
+        <Component class="javax.swing.JCheckBox" name="verificar_correock">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="69" green="a8" id="Actions.Green" palette="3" red="59" type="palette"/>
@@ -520,10 +520,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="verificar_correoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="verificar_correockActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="chiquitin">
+        <Component class="javax.swing.JLabel" name="chiquitin_lbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagen/ok.png"/>
