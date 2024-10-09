@@ -436,9 +436,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton_iphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphoneActionPerformed
-
         boton_iphone_clone.setSelected(boton_iphone.isSelected());
-
     }//GEN-LAST:event_boton_iphoneActionPerformed
 
     private void opcion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion6ActionPerformed
@@ -462,42 +460,38 @@ public class Ventana_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_opcion3ActionPerformed
 
     private void opcion1_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_opcion1_cloneActionPerformed
 
     private void opcion2_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_opcion2_cloneActionPerformed
 
     private void opcion3_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_opcion3_cloneActionPerformed
 
     private void opcion4_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion4_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_opcion4_cloneActionPerformed
 
     private void opcion5_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion5_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_opcion5_cloneActionPerformed
 
     private void opcion6_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion6_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_opcion6_cloneActionPerformed
 
     private void texto_randomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_randomActionPerformed
         for (int i = texto_random.getText().length() - 1; i >= 0; i--) {
-
             texto_random_clone.setText(texto_random_clone.getText() + texto_random.getText().charAt(i));
-
         }
-
-
     }//GEN-LAST:event_texto_randomActionPerformed
 
 
     private void texto_random_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_random_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_texto_random_cloneActionPerformed
 
     private void combobox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combobox1ActionPerformed
@@ -505,19 +499,19 @@ public class Ventana_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_combobox1ActionPerformed
 
     private void combobox1_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combobox1_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_combobox1_cloneActionPerformed
 
     private void boton_iphone_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_iphone_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_boton_iphone_cloneActionPerformed
 
     private void escribir_correoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escribir_correoActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_escribir_correoActionPerformed
 
     private void escribir_correo_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escribir_correo_cloneActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_escribir_correo_cloneActionPerformed
 
     private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1ActionPerformed
@@ -525,7 +519,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_opcion1ActionPerformed
 
     private void texto_randomKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_texto_randomKeyReleased
-        
+
     }//GEN-LAST:event_texto_randomKeyReleased
 
     private void escribir_correoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_escribir_correoKeyReleased
@@ -537,7 +531,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             escribir_correo.setBorder(bordeRojo);
         }
         if ((escribir_correo.getText().matches(regex))) {
-            Border bordeNegro = BorderFactory.createLineBorder(Color.GREEN,2);
+            Border bordeNegro = BorderFactory.createLineBorder(Color.GREEN, 2);
             escribir_correo.setBorder(bordeNegro);
             verificar_correo.setVisible(true);
             verificar_correo.setSelected(true);
@@ -572,7 +566,7 @@ public class Ventana_1 extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Ventana_1().setVisible(true);
-                
+
             }
         });
     }
