@@ -4,6 +4,8 @@
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="grup_botones123">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="grup_botones123_clone">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -262,6 +264,9 @@
       <SubComponents>
         <Component class="javax.swing.JRadioButton" name="opcion1">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="grup_botones123"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Opcion 1"/>
           </Properties>
           <Events>
@@ -270,6 +275,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion2">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="grup_botones123"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Opcion 2"/>
           </Properties>
           <Events>
@@ -278,6 +286,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion3">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="grup_botones123"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Opcion 3"/>
           </Properties>
           <Events>
@@ -372,6 +383,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion1_clone">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="grup_botones123_clone"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Opcion 1"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
@@ -381,6 +395,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion2_clone">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="grup_botones123_clone"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Opcion 2"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
@@ -390,6 +407,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="opcion3_clone">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="grup_botones123_clone"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Opcion 3"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>

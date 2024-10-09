@@ -23,6 +23,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     private void initComponents() {
 
         grup_botones123 = new javax.swing.ButtonGroup();
+        grup_botones123_clone = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         opcion1 = new javax.swing.JRadioButton();
         opcion2 = new javax.swing.JRadioButton();
@@ -56,6 +57,7 @@ public class Ventana_1 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        grup_botones123.add(opcion1);
         opcion1.setText("Opcion 1");
         opcion1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,6 +65,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
+        grup_botones123.add(opcion2);
         opcion2.setText("Opcion 2");
         opcion2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,6 +73,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
+        grup_botones123.add(opcion3);
         opcion3.setText("Opcion 3");
         opcion3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,6 +159,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
+        grup_botones123_clone.add(opcion1_clone);
         opcion1_clone.setText("Opcion 1");
         opcion1_clone.setEnabled(false);
         opcion1_clone.addActionListener(new java.awt.event.ActionListener() {
@@ -163,6 +168,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
+        grup_botones123_clone.add(opcion2_clone);
         opcion2_clone.setText("Opcion 2");
         opcion2_clone.setEnabled(false);
         opcion2_clone.addActionListener(new java.awt.event.ActionListener() {
@@ -171,6 +177,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
+        grup_botones123_clone.add(opcion3_clone);
         opcion3_clone.setText("Opcion 3");
         opcion3_clone.setEnabled(false);
         opcion3_clone.addActionListener(new java.awt.event.ActionListener() {
@@ -456,12 +463,12 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2ActionPerformed
         opcion2_clone.setSelected(opcion2.isSelected());
-        apagarOtrosBotones(opcion2);
+        //apagarOtrosBotones(opcion2);
     }//GEN-LAST:event_opcion2ActionPerformed
 
     private void opcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3ActionPerformed
         opcion3_clone.setSelected(opcion3.isSelected());
-        apagarOtrosBotones(opcion3);
+        //apagarOtrosBotones(opcion3);
     }//GEN-LAST:event_opcion3ActionPerformed
 
     private void opcion1_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1_cloneActionPerformed
@@ -494,8 +501,6 @@ public class Ventana_1 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_texto_randomActionPerformed
 
-    
-    
 
     private void texto_random_cloneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texto_random_cloneActionPerformed
 
@@ -523,7 +528,7 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1ActionPerformed
         opcion1_clone.setSelected(opcion1.isSelected());
-        apagarOtrosBotones(opcion1);
+
     }//GEN-LAST:event_opcion1ActionPerformed
 
     private void texto_randomKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_texto_randomKeyReleased
@@ -625,6 +630,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     private javax.swing.JTextField escribir_correo;
     private javax.swing.JTextField escribir_correo_clone;
     private javax.swing.ButtonGroup grup_botones123;
+    private javax.swing.ButtonGroup grup_botones123_clone;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton opcion1;
