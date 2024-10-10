@@ -463,12 +463,12 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     private void opcion2rbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2rbActionPerformed
         opcion2_clonerb.setSelected(opcion2rb.isSelected());
-        //apagarOtrosBotones(opcion2);
+
     }//GEN-LAST:event_opcion2rbActionPerformed
 
     private void opcion3rbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3rbActionPerformed
         opcion3_clonerb.setSelected(opcion3rb.isSelected());
-        //apagarOtrosBotones(opcion3);
+
     }//GEN-LAST:event_opcion3rbActionPerformed
 
     private void opcion1_clonerbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1_clonerbActionPerformed
@@ -558,43 +558,7 @@ public class Ventana_1 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_escribir_correo_fieldKeyReleased
 
-    private void apagarOtrosBotones(JRadioButton boton) {
-        int esboton = 0;
-        if (boton.equals(opcion1rb)) {
-            esboton = 1;
-        }
-        if (boton.equals(opcion2rb)) {
-            esboton = 2;
-        }
-        if (boton.equals(opcion3rb)) {
-            esboton = 3;
-        }
 
-        // apagar los otros botones
-        switch (esboton) {
-            case 1:
-                opcion2rb.setSelected(false);
-                opcion2_clonerb.setSelected(opcion2rb.isSelected());
-                opcion3rb.setSelected(false);
-                opcion3_clonerb.setSelected(opcion3rb.isSelected());
-                break;
-            case 2:
-                opcion1rb.setSelected(false);
-                opcion1_clonerb.setSelected(opcion1rb.isSelected());
-                opcion3rb.setSelected(false);
-                opcion3_clonerb.setSelected(opcion3rb.isSelected());
-                break;
-            case 3:
-                opcion1rb.setSelected(false);
-                opcion1_clonerb.setSelected(opcion1rb.isSelected());
-                opcion2rb.setSelected(false);
-                opcion2_clonerb.setSelected(opcion2rb.isSelected());
-                break;
-            default:
-                // Si ningún botón coincide, no hace nada
-                break;
-        }
-    }
     private void spinner1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spinner1KeyReleased
 
     }//GEN-LAST:event_spinner1KeyReleased
